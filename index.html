@@ -33,17 +33,12 @@
             color: #555;
         }
         .loader {
-            width: 50px;
-            height: 50px;
-            border: 6px solid #f3f3f3; /* Light grey */
-            border-top: 6px solid #ff5733; /* Orange color */
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-image: url('/mnt/data/image.png');
+            background-size: cover;
             margin-top: 20px;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
         }
         .footer {
             margin-top: 30px;
@@ -57,7 +52,7 @@
     <div class="container">
         <h1>We Are Under Maintenance</h1>
         <p>We're making some improvements to SimplifyQA. We'll be back soon!</p>
-        <!-- Loader -->
+        <!-- Centered Image as Loader -->
         <div class="loader"></div>
         <div class="footer">
             <p>&copy; 2024 SimplifyQA. All rights reserved.</p>
