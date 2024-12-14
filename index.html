@@ -32,9 +32,18 @@
             font-size: 1.2em;
             color: #555;
         }
-        .maintenance-image {
-            width: 100px;
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 6px solid #f3f3f3; /* Light grey */
+            border-top: 6px solid #ff5733; /* Orange color */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
             margin-top: 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
         .footer {
             margin-top: 30px;
@@ -48,7 +57,8 @@
     <div class="container">
         <h1>We Are Under Maintenance</h1>
         <p>We're making some improvements to SimplifyQA. We'll be back soon!</p>
-        <img class="maintenance-image" src="https://via.placeholder.com/100" alt="Maintenance Icon">
+        <!-- Loader -->
+        <div class="loader"></div>
         <div class="footer">
             <p>&copy; 2024 SimplifyQA. All rights reserved.</p>
         </div>
